@@ -152,7 +152,7 @@ export interface CryptoSetupArgs {
  * Can (and will) be used if none of the modules has an implementation of {@link ProvideCryptoSetupExtensions}.
  */
 export class DefaultCryptoSetupExtensions extends CryptoSetupExtensionsBase {
-    public SHOW_ENCRYPTION_SETUP_UI = true;
+    public SHOW_ENCRYPTION_SETUP_UI = false;
 
     public examineLoginResponse(response: any, credentials: ExtendedMatrixClientCreds): void {
         console.log("Default empty examineLoginResponse() => void");
